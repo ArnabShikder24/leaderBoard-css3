@@ -1,6 +1,131 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
 /* Universal code */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #E5E5E5;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.container {
+    width: 870px;
+    background-color: #ffffff;
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+hr {
+    border: 1px solid #D1D1D1;
+    margin-top: 30px;
+}
+/* start top Players section  */
+.sec-title {
+    color: #562EFF;
+    font-size: 24px;
+    padding: 0 20px 20px 0;
+}
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+}
+.player {
+    display: flex;
+    align-items: center;
+}
+.player .title-name {
+    font-size: 18px;
+    margin-left: 16px;
+}
+.player img {
+    width: 56px;
+    height: 56px;
+}
+/* end top Players section  */
+/* start blog section */
+.top-blogs {
+    margin-top: 30px;
+}
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
+}
+.blog {
+    display: flex;
+}
+.blog img {
+    width: 224px;
+    height: 127px;
+    margin-right: 16px;
+}
+.blog-info p {
+    color: #9F9F9F;
+    margin-top: 10px;
+}
+.blog-info p a{
+    color: #562EFF;
+    text-decoration: none;
+}
+/* end blog section */
+/* start course section */
+.latest-courses {
+    font-family: 'Roboto', sans-serif;
+}
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+}
+.course {
+    box-shadow: 0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    border-radius: 10px;
+}
+.course img{
+    width: 224px;
+    height: 104px;
+    margin-bottom: 10px;
+}
+.course p {
+    margin: 10px 0;
+}
+.course a {
+    text-decoration: none;
+    color: #ED6B4F;
+}
+.course-info {
+    font-size: 14.69px;
+    display: flex;
+    justify-content: space-between;
+}
+.star i {
+    color: #FFC014;
+}
+.star i:nth-child(5) {
+    color: #AEAEAE;
+}
+.star span {
+    margin-left: 5px;
+}
+.watch {
+    background: #FFE4E8;
+    color: #FF4A60;
+    padding: 5px;
+    border-radius: 10px;
+}
+.watch i {
+    margin-left: 5px;
+}
+/* end course section */
