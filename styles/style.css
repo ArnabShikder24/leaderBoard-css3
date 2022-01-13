@@ -23,7 +23,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
     position: fixed;
 }
 .nav {
@@ -187,3 +186,4 @@ hr {
     margin-left: 5px;
 }
 /* end course section */
+
