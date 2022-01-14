@@ -187,3 +187,53 @@ hr {
 }
 /* end course section */
 
+/*---------------------------- 
+         Media query
+------------------------------ */
+
+
+/*  Small devices (landscape phones, less than 768px) */
+@media (max-width: 688px) { 
+    .logo {
+        margin-left: 16px;
+    }
+    .menu {
+        display: none;
+    }
+    .container {
+        width: 100%;
+      }
+    .players, .blogs, .courses{
+    grid-template-columns: repeat(1,1fr);
+    }
+    .player, .blog {
+      flex-direction: column;
+    }
+    .blog {
+        align-items: center;
+    }
+    .blog img {
+        margin-bottom: 16px;
+    }
+     }
+    
+    @media (min-width: 689px) and (max-width: 992px) {
+        .logo {
+            margin-left: 16px;
+        }
+        .menu ul li:last-child a {
+            margin-right: 20px;
+        }  
+        .container{
+            width: 100%;
+        }
+        .players, .blogs, .courses{
+        grid-template-columns: repeat(2,1fr);
+        }
+        .blog {
+            flex-direction: column;
+        } 
+        .blog img {
+            margin-bottom: 16px;
+        }
+    }
